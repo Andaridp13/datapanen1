@@ -57,3 +57,9 @@ print("Jumlah hasil panen jagung dari lokasi2:",
 #Tampilkan nama lokasi dari lokasi3
 print("Nama lokasi dari lokasi3:", data_panen['lokasi3']['nama_lokasi'])
 
+#Masukkan jumlah hasil panen padi dan kedelai setiap lokasi ke dalam variabel yang berbeda
+hasil_padi = {lokasi: data['hasil_panen']['padi'] for lokasi, data in data_panen.items()}
+hasil_kedelai = {lokasi: data['hasil_panen']['kedelai'] for lokasi, data in data_panen.items()}
+print("Hasil panen padi:", hasil_padi)
+print("Hasil panen kedelai:", hasil_kedelai)
+
