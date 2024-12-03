@@ -63,3 +63,12 @@ hasil_kedelai = {lokasi: data['hasil_panen']['kedelai'] for lokasi, data in data
 print("Hasil panen padi:", hasil_padi)
 print("Hasil panen kedelai:", hasil_kedelai)
 
+#Buat percabangan untuk mengecek kondisi lokasi
+for lokasi, data in data_panen.items():
+    padi = data['hasil_panen']['padi']
+    jagung = data['hasil_panen']['jagung']
+    if padi > 1300 or jagung > 800:
+        print(f"{data['nama_lokasi']} memerlukan perhatian khusus.")
+    else:
+        print(f"{data['nama_lokasi']} dalam kondisi baik.")
+
