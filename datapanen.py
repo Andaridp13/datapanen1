@@ -49,7 +49,11 @@ for lokasi, data in data_panen.items():
     for jenis, jumlah in data['hasil_panen'].items():
         print(f"  {jenis.capitalize()}: {jumlah}")
     print()
-    
+
 #Tampilkan jumlah hasil panen jagung dari lokasi2
 print("Jumlah hasil panen jagung dari lokasi2:",
       data_panen['lokasi2']['hasil_panen']['jagung'])
+
+#Tampilkan nama lokasi dari lokasi3
+print("Nama lokasi dari lokasi3:", data_panen['lokasi3']['nama_lokasi'])
+
